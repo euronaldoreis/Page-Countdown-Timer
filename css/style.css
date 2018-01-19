@@ -729,7 +729,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 
 	#intro .logo-header {
-		margin-top: 20px;
+		margin-top: -20px;
 }
 
 @media (max-width: 640px) {
