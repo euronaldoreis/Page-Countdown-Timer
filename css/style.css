@@ -74,23 +74,18 @@ ul, ol {
 	display: block;
 }
 #preloader {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #ddd;
-	z-index: 99999;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
+	background: #dd5051;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center
 }
 #status {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	width: 64px;
-	height: 64px;
-	margin: -32px 0 0 -32px;
-	padding: 0;
+    width: 300px;
+    height: 300px;
+    background: #fff;
 }
 ul, ol {
 	padding: 0;
@@ -278,7 +273,7 @@ color: #fff;
 #intro .header {
 	background: #56d0ffd9;
 	background-image: url(../img/bg_1.png), url(../img/nuvem_2.png), url(../img/bg_2.png), url(../img/nuvem_1.png);
-	background-repeat: no-repeat, no-repeat, repeat-x, no-repeat;
+	background-repeat: repeat-x, no-repeat, repeat-x, no-repeat;
 	-webkit-background-size: cover, 200px, cover, 100px;
 	-moz-background-size: cover, 200px, cover, 100px;
 	background-size: cover, 200px, cover, 100px;
@@ -290,10 +285,6 @@ color: #fff;
 #intro .logo {
 	width: 400px;
 	margin-left: -80px;
-}
-
-#intro .logo-header {
-	margin-top: -250px;
 }
 
 #intro .intro-body {
@@ -729,7 +720,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 
 	#intro .logo-header {
-		margin-top: -200px;
+		margin-top: -200px!important;
+	} 
 }
 
 @media (max-width: 640px) {
@@ -771,7 +763,7 @@ footer.page-footer .social-section ul a {
 }
 
 .btn-floating.btn-sm, .btn-floating.btn-small, .btn-floating.wishlist {
-	    width: 36.15385px;
+    width: 36.15385px;
     height: 36.15385px;
 }
 
@@ -799,3 +791,7 @@ footer.page-footer .social-section ul a {
 	color: #555;
 	height: 30px;
 }
+
+#intro .logo-header {
+	margin-top: -250px;
+} 
